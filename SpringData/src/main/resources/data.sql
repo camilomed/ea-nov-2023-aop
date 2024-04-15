@@ -1,0 +1,10 @@
+insert into category (id, name) VALUES (1,'fruit');
+insert into product (id,name,price,rating,category_id) VALUES (1,'pera',2.54,3.9,1);
+insert into product (id,name,price,rating,category_id) VALUES (2,'apple',3.54,2.9,1);
+insert into product (id,name,price,rating,category_id) VALUES (3,'banana',3.54,4.9,1);
+insert into product (id,name,price,rating,category_id) VALUES (4,'berry',0.54,3.5,1);
+insert into product (id,name,price,rating,category_id) VALUES (5,'carrot',1.54,3.2,1);
+insert into address(id, city, street, zip) VALUES (1,'bogota','calle 100','11011');
+insert into user (address_id, id, email, first_name, last_name, password) VALUES  (1,1,'j@mail.com','camilo','medina','1234');
+insert into review (id, product_id, user_id, comment) values (1,1,1,'good');
+UPDATE address SET user_id = 1 WHERE id = 1;
