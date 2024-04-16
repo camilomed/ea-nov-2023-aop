@@ -26,7 +26,7 @@ public class AspectL {
 
         HttpServletRequest requestAttri = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
         String typeHttp= requestAttri.getMethod();
-        if(typeHttp.equals("POST")){
+        if("POST".equals(typeHttp)){
             String head= requestAttri.getHeader("AOP-IS-AWESOME");
             if (head==null) throw new AopIsAwesomeHeaderException("missing header");
         }
